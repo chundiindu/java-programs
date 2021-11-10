@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+    int[] arr = new int[]{12,11,5,25,75,95,111};
+    
+    int n = arr.length;
+    int min = arr[0];
+   for(int i=0;i<n-1;i++)
+   {
+      if(min>arr[i+1])
+      {
+          min = arr[i+1];
+      }
+   }
+   System.out.print(min);
+    
+    
+    }
+}
