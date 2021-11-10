@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+    int[] arr = new int[]{1,2,3,4,5};
+    
+    int n = arr.length;
+    int low = 0;
+    int high = n-1;
+    
+    while(low<high)
+    {
+        int temp = arr[low];
+        arr[low]= arr[high];
+        arr[high]=temp;
+        low++;
+        high--;
+         
+    }
+    System.out.print(Arrays.toString(arr));
+    
+    
+    }
+}
