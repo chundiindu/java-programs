@@ -1,0 +1,11 @@
+class Solution{
+    int findFrequency(int A[], int x){
+        int count=0;
+        for(int a:A)
+        {
+            if(a==x)
+            count++;
+        }
+        return count;
+    }
+}
